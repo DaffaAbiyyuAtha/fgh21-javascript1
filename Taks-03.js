@@ -1,8 +1,13 @@
-let a = "";
-for (let i = 5; i >= 0; i--) {
-  for (let j = 1; j <= i; j++) {
-    a = a + j;
+const printSegitiga = 5;
+
+if (typeof printSegitiga === "number") {
+  for (let angkaAwal = printSegitiga; angkaAwal > 0; angkaAwal--) {
+    let text = "";
+    for (let i = 1; i <= angkaAwal; i++) {
+      text = text + i + " ";
+    }
+    console.log(text);
   }
-  a = a + "\n";
+} else {
+  console.log("Data harus number");
 }
-console.log(a);
