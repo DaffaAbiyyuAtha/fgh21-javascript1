@@ -1,22 +1,23 @@
-let BI = 10;
-let BEN = 24;
-let MAT = 12;
-let IPA = 5;
-let x = (BI + BEN + MAT + IPA) / 4;
+const mtk = 80;
+const bahasaIndonesia = 90;
+const bahasaInggris = 89;
+const ipa = 69;
 
-if (x >= 90) {
-  console.log("You Value : " + x);
-  console.log("You Get : A");
-} else if (x >= 80) {
-  console.log("You Value : " + x);
-  console.log("You Get : B");
-} else if (x >= 70) {
-  console.log("You Value : " + x);
-  console.log("You Get : C");
-} else if (x >= 60) {
-  console.log("You Value : " + x);
-  console.log("You Get : D");
+const rataRata = (bahasaIndonesia + bahasaInggris + mtk + ipa) / 4;
+
+if (rataRata >= 90) {
+  console.log("Rata-rata : " + rataRata);
+  console.log("Grade : A");
+} else if (rataRata >= 80) {
+  console.log("Rata-rata : " + rataRata);
+  console.log("Grade : B");
+} else if (rataRata >= 70) {
+  console.log("Rata-rata : " + rataRata);
+  console.log("Grade : C");
+} else if (rataRata >= 60) {
+  console.log("Rata-rata : " + rataRata);
+  console.log("Grade : D");
 } else {
-  console.log("You Value : " + x);
-  console.log("You Get : E");
+  console.log("Rata-rata : " + rataRata);
+  console.log("Grade : E");
 }
